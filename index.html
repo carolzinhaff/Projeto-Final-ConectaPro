@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <div class="zoom-controls">
+        <button id="zoom-out">Zoom - </button>
+        <button id="zoom-in">Zoom + </button>
+    </div>
+    <div class="form"> 
+        <form method="post" action="index.html">
+            <h1>Estamos felizes em te ter aqui!</h1>
+            <p>Estamos empolgados em tê-lo conosco. O ConectaPro é o seu portal para uma experiência única e personalizada. Ao se cadastrar, você terá acesso a recursos exclusivos, conteúdo cativante e uma comunidade vibrante.</p>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="col">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+                <div class="col">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="text" id="dataNascimento" name="dataNascimento" placeholder="DD/MM/AAAA" required>
+                </div>
+            </div>
+            
+            <label for="confirmarSenha">Confirmar Senha:</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <input type="submit" value="Cadastrar" class="btn-cadastrar">
+            <div class="registro-link">
+                <p><a
+                    href="#">Já tenho uma conta.</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

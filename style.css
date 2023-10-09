@@ -1,0 +1,110 @@
+/* Estilo para telas maiores (desktop) */
+@media screen and (min-width: 768px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(45deg, #e8d3a9, #dddddd, #fccfcb);
+        margin: 0;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    /* Estilo para o cabeçalho dos botões de zoom */
+    .zoom-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent; /* Define a cor de fundo desejada */
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .zoom-controls {
+        display: inline-block; /* Para centralizar horizontalmente */
+        background-color: #ffffff;
+        padding: 10px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .zoom-controls button {
+        padding: 5px 10px;
+        font-size: 16px;
+        background-color: #5ce1e6;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    .zoom-controls button:hover {
+        background-color: #45b2b6;
+    }
+
+    /* Estilo para o conteúdo central */
+    div.form {
+        background-color: #ffffff;
+        max-width: 400px;
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 80px auto; /* Mantém o conteúdo centralizado abaixo dos botões de zoom */
+    }
+
+    h1, h2 {
+        text-align: center;
+        font-weight: normal;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #bec3fc;
+    }
+
+    .space-after {
+        margin-bottom: 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .col {
+        flex-basis: calc(50% - 10px);
+        margin-right: 10px;
+    }
+
+    .col:last-child {
+        margin-right: 0;
+    }
+
+    input[type="submit"].btn-cadastrar {
+        width: 100%;
+        padding: 10px;
+        background-color: #5ce1e6;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"].btn-cadastrar:hover {
+        background-color: #45b2b6;
+    }
+}

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E2E2E2;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem; /* Espaçamento pequeno em rem */
+}
+
+header a {
+    margin-right: 1rem; /* Espaçamento entre a imagem e o texto */
+}
+
+header span {
+    font-weight: bold;
+    margin-right: 1rem; /* 1rem da primeira imagem */
+    margin-right: 2.54rem; /* 1 polegada (convertida para rem) da segunda imagem */
+}
+
+.primeira-imagem {
+    width: 2rem; /* Largura da primeira imagem */
+    height: 2rem; /* Altura da primeira imagem */
+    margin: 0.5rem; /* Espaçamento de 0.5rem para a primeira imagem */
+}
+
+.segunda-imagem {
+    width: 19rem;
+    height: 10rem;
+    /* Estilos diferentes para a segunda imagem */
+}
+
+/* Estilos para o lado direito do header */
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Isso alinha os elementos à direita */
+}
+
+/* Estilos para a caixa de busca */
+.header-right input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+/* Estilos para os ícones e o botão */
+.header-right .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.header-right button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Para alinhar os cards lado a lado */
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blue-card {
+    background-color: lightblue;
+}
+
+.green-card {
+    background-color: lightgreen;
+}
+
+.yellow-card {
+    background-color: lightyellow;
+}
+
+.recipientes-grandes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.recipientes-pequenos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.receptor {
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
